@@ -1,0 +1,696 @@
+@charset "UTF-8";
+html * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html a:link {
+  text-decoration: none;
+}
+
+html a:visited {
+  text-decoration: none;
+}
+
+html body {
+  font-family: 'Lato', sans-serif;
+}
+
+html body #en-tête {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: black;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body #en-tête .logo {
+  width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20px;
+}
+
+html body #en-tête #navbar {
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #en-tête #navbar {
+    display: none;
+  }
+}
+
+html body #en-tête #navbar li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+html body #en-tête #navbar #shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 300px;
+}
+
+html body #en-tête #navbarmobile {
+  width: 80%;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (min-width: 769px) {
+  html body #en-tête #navbarmobile {
+    display: none;
+  }
+}
+
+html body #en-tête #navbarmobile #myLinks {
+  display: none;
+}
+
+html body #en-tête #navbarmobile #myLinks a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  padding-left: 0;
+}
+
+html body #en-tête #navbarmobile .fa-bars:before {
+  color: white;
+  font-size: 2em;
+}
+
+html body #en-tête #navbarmobile #shopmobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0;
+}
+
+html body #en-tête #search {
+  width: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #en-tête #search {
+    display: none;
+  }
+}
+
+html body #en-tête #search li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+html body #en-tête #search ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0;
+  padding: 30px;
+}
+
+html body #landingpage {
+  width: 100%;
+  height: auto;
+}
+
+html body #landingpage button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+html body #landingpage #background {
+  background-image: url(images/bgheader.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #landingpage #background {
+    background-position-x: center;
+  }
+}
+
+html body #landingpage #background #bigtitle {
+  font-weight: bolder;
+  font-size: 3.5em;
+  width: 20%;
+  padding-top: 21vh;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #landingpage #background #bigtitle {
+    width: 60%;
+  }
+}
+
+html body #landingpage #background #details {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  margin-left: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #landingpage #background #details {
+    margin-left: 100px;
+  }
+}
+
+html body #snowboards #snow-container {
+  /*slider*/
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+
+html body #snowboards #snow-container h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+html body #snowboards #snow-container p {
+  text-align: center;
+}
+
+html body #snowboards #snow-container #cross1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+html body #snowboards #snow-container .mySlides {
+  display: none;
+}
+
+html body #snowboards #snow-container .slideshow-container {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+html body #snowboards #snow-container .slideshow-container img {
+  position: relative;
+  left: 43%;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #snowboards #snow-container .slideshow-container img {
+    left: 33%;
+  }
+}
+
+html body #snowboards #snow-container .prev,
+html body #snowboards #snow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #807979ba;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html body #snowboards #snow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+html body #snowboards #snow-container .prev:hover,
+html body #snowboards #snow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+html body #snowboards #snow-container #alldots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body #snowboards #snow-container #alldots .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+html body #snowboards #snow-container #alldots .dot:hover {
+  background-color: #717171;
+}
+
+html body #snowboards #snow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html body #snowboards #snow-container #bottomtext {
+  font-weight: bolder;
+  padding-bottom: 10vh;
+}
+
+html body #community {
+  width: 100%;
+  height: auto;
+}
+
+html body #community #background2 {
+  background-image: url(images/bgsection3.jpg);
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #community #background2 {
+    background-color: #202020;
+    background-image: none;
+    width: 100%;
+  }
+}
+
+html body #community #background2 #blocktext {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body #community #background2 #companytitle {
+  width: 50%;
+  font-size: 3.5em;
+  padding: 50px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #community #background2 #companytitle {
+    width: 60%;
+    font-size: 2em;
+  }
+}
+
+html body #community #background2 .companytext {
+  width: 40%;
+  font-size: 1em;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #community #background2 .companytext {
+    width: 80%;
+  }
+}
+
+html body #features h2 {
+  text-align: center;
+  padding-top: 10vh;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+html body #features #cross {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+html body #features #featimage {
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 10vh;
+}
+
+@media only screen and (max-width: 768px) {
+  html body #features #featimage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+html body #features #featimage .imageandtext {
+  font-size: 1em;
+  width: 220px;
+}
+
+html body #features h1 {
+  text-align: center;
+}
+
+html body #features .ImgThumbnail {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html body #features .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+html body #features .modalImage {
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: 60%;
+  max-width: 700px;
+}
+
+html body #features #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+html body #features .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html body #features .close:hover,
+html body #features .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  html body #features .modalImage {
+    width: 100%;
+  }
+}
+
+html body footer {
+  background-color: black;
+}
+
+html body footer li:hover {
+  cursor: pointer;
+}
+
+html body footer p:hover {
+  cursor: pointer;
+}
+
+html body footer button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+html body footer #footertext {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  html body footer #footertext {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html body footer #footertext #products {
+    font-size: 0.8em;
+  }
+}
+
+html body footer #footertext #products .collapsible {
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 25%;
+  outline: none;
+}
+
+html body footer #footertext #products .content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+html body footer #footertext #products .active,
+html body footer #footertext #products .collapsible:hover {
+  background-color: black;
+}
+
+html body footer #footertext #about .collapsible {
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 25%;
+  outline: none;
+}
+
+html body footer #footertext #about .content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+html body footer #footertext #about .active,
+html body footer #footertext #about .collapsible:hover {
+  background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  html body footer #footertext #about {
+    font-size: 0.8em;
+  }
+}
+
+html body footer #footertext #customer .collapsible {
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 25%;
+  outline: none;
+}
+
+html body footer #footertext #customer .content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+html body footer #footertext #customer .active,
+html body footer #footertext #customer .collapsible:hover {
+  background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  html body footer #footertext #customer {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html body footer #footertext #newsletter h3 {
+    font-size: 0.8em;
+  }
+}
+
+html body footer #footertext #newsletter .input-email {
+  padding: 10px;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  html body footer #footertext #newsletter .input-email {
+    width: 60%;
+  }
+}
+
+html body footer #footertext #newsletter #Go {
+  padding: 10px;
+  border: none;
+  position: relative;
+  left: -5px;
+  background-color: #898888;
+}
+
+html body footer #footertext #newsletter #socialmedia ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 0;
+  padding-top: 30px;
+}
+
+html body footer #regions {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  html body footer #regions {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

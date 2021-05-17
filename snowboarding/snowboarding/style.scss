@@ -1,0 +1,623 @@
+html {
+    * {
+        box-sizing: border-box
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    body {
+        font-family: 'Lato', sans-serif;
+
+        // Header
+        #en-tête {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+            align-items: center;
+
+            .logo {
+                width: 5%;
+                display: flex;
+                justify-content: center;
+                padding-left: 20px;
+            }
+
+            #navbar {
+                width: 60%;
+
+                @media only screen and (max-width:768px) {
+                    display: none;
+                }
+
+                li:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+
+                #shop {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style: none;
+                    padding-left: 0;
+                    padding-right: 300px;
+                }
+            }
+
+            //navbar mobile
+            #navbarmobile {
+                width: 80%;
+                overflow: hidden;
+                background-color: black;
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+
+                @media only screen and (min-width:769px) {
+                    display: none;
+                }
+
+                #myLinks {
+                    display: none;
+
+                    a {
+                        color: white;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-size: 17px;
+                        display: block;
+                        border-bottom: 1px solid white;
+                        margin-bottom: 15px;
+                        padding-left: 0;
+                    }
+                }
+
+                .fa-bars {
+                    &:before {
+                        color: white;
+                        font-size: 2em;
+                    }
+                }
+
+                #shopmobile {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style: none;
+                    padding-left: 0;
+                }
+            }
+
+            //fin de nav mobile
+            #search {
+                width: 15%;
+
+                @media only screen and (max-width:768px) {
+                    display: none;
+                }
+
+                li:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style: none;
+                    padding-left: 0;
+                    padding: 30px;
+                }
+            }
+        }
+
+        // Fin de Header
+        //Landing page
+        #landingpage {
+            width: 100%;
+            height: auto;
+
+            button:hover {
+                cursor: pointer;
+                opacity: 0.6;
+            }
+
+            #background {
+                background-image: url(images/bgheader.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 800px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media only screen and (max-width:768px) {
+                    background-position-x: center;
+                }
+
+                #bigtitle {
+                    font-weight: bolder;
+                    font-size: 3.5em;
+                    width: 20%;
+                    padding-top: 21vh;
+
+                    @media only screen and (max-width:768px) {
+                        width: 60%;
+                    }
+                }
+
+                #details {
+                    border: none;
+                    background-color: black;
+                    color: white;
+                    padding: 15px 20px 15px 20px;
+                    margin-left: 250px;
+
+                    @media only screen and (max-width:768px) {
+                        margin-left: 100px;
+                    }
+                }
+            }
+        }
+
+        // Fin de landing page
+        //Snowboards
+        #snowboards {
+            #snow-container {
+                h2 {
+                    text-align: center;
+                    font-size: 2em;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                #cross1 {
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+
+                .mySlides {
+                    display: none;
+                }
+
+                /*slider*/
+                .slideshow-container {
+                    width: 100%;
+                    background-color: white;
+                    position: relative;
+
+                    img {
+                        position: relative;
+                        left: 43%;
+                        padding: 50px;
+
+                        @media only screen and (max-width:768px) {
+                            left: 33%
+                        }
+                    }
+                }
+
+                /* Next & previous buttons */
+                .prev,
+                .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: #807979ba;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+
+                /* Position the "next button" to the right */
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover,
+                .next:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+
+
+                /* The dots/bullets/indicators */
+
+                #alldots {
+                    display: flex;
+                    justify-content: center;
+
+                    .dot {
+
+                        cursor: pointer;
+                        height: 15px;
+                        width: 15px;
+                        margin: 0 2px;
+                        background-color: #bbb;
+                        border-radius: 50%;
+                        display: inline-block;
+                        transition: background-color 0.6s ease;
+                    }
+
+                    .dot:hover {
+                        background-color: #717171;
+                    }
+                }
+
+
+                /* Fading animation */
+                .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 1.5s;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+
+                @-webkit-keyframes fade {
+                    from {
+                        opacity: .4
+                    }
+
+                    to {
+                        opacity: 1
+                    }
+                }
+
+                @keyframes fade {
+                    from {
+                        opacity: .4
+                    }
+
+                    to {
+                        opacity: 1
+                    }
+                }
+
+                #bottomtext {
+                    font-weight: bolder;
+                    padding-bottom: 10vh;
+                }
+            }
+        }
+
+        //Fin de snowboards 
+        // Community
+        #community {
+            width: 100%;
+            height: auto;
+
+            #background2 {
+                background-image: url(images/bgsection3.jpg);
+                height: 1000px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+                display: flex;
+                align-items: center;
+
+                @media only screen and (max-width:768px) {
+                    background-color: #202020;
+                    background-image: none;
+                    width: 100%;
+
+                }
+
+                #blocktext {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+                #companytitle {
+                    width: 50%;
+                    font-size: 3.5em;
+                    padding: 50px;
+                    margin-bottom: 0;
+
+                    @media only screen and (max-width:768px) {
+                        width: 60%;
+                        font-size: 2em;
+                    }
+                }
+
+                .companytext {
+                    width: 40%;
+                    font-size: 1em;
+                    line-height: 30px;
+
+                    @media only screen and (max-width:768px) {
+                        width: 80%;
+                    }
+
+                }
+
+            }
+        }
+
+        //Fin de Community
+        //features
+        #features {
+
+            h2 {
+                text-align: center;
+                padding-top: 10vh;
+                font-size: 2em;
+                margin-bottom: 0;
+            }
+
+            #cross {
+                text-align: center;
+                font-size: 1.5em;
+            }
+
+            #featimage {
+                width: 60%;
+                margin: auto;
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 10vh;
+
+                @media only screen and (max-width:768px) {
+                    flex-wrap: wrap;
+                }
+
+                .imageandtext {
+                    font-size: 1em;
+                    width: 220px;
+                }
+            }
+
+            //modal effect
+            h1 {
+                text-align: center;
+            }
+
+            .ImgThumbnail {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+
+            .modalImage {
+                margin: auto;
+                display: block;
+                width: 50%;
+                height: 60%;
+                max-width: 700px;
+            }
+
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: rgb(255, 0, 0);
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 700px) {
+                .modalImage {
+                    width: 100%;
+                }
+            }
+
+            //fin de modal effect
+        }
+
+        //Fin de Features
+        //Footer
+        footer {
+            background-color: black;
+
+            li:hover {
+                cursor: pointer;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
+
+            button:hover {
+                cursor: pointer;
+                opacity: 0.6;
+            }
+
+            #footertext {
+                width: 80%;
+                height: auto;
+                margin: auto;
+                color: white;
+                display: flex;
+                justify-content: space-around;
+                padding-top: 50px;
+
+                @media only screen and (max-width:768px) {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                #products {
+                    @media only screen and (max-width:768px) {
+                        font-size: 0.8em;
+                    }
+
+                    .collapsible {
+                        background-color: black;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: bolder;
+                        font-size: 1.2em;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        padding: 18px;
+                        width: 25%;
+                        outline: none;
+                    }
+
+                    .content {
+                        padding: 0 18px;
+                        display: none;
+                        overflow: hidden;
+                    }
+                    .active,
+                    .collapsible:hover {
+                        background-color:black;
+                    }
+                }
+
+                #about {
+                    .collapsible {
+                        background-color: black;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: bolder;
+                        font-size: 1.2em;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        padding: 18px;
+                        width: 25%;
+                        outline: none;
+                    }
+
+                    .content {
+                        padding: 0 18px;
+                        display: none;
+                        overflow: hidden;
+                    }
+                    .active,
+                    .collapsible:hover {
+                        background-color: black;
+                    }
+                    @media only screen and (max-width:768px) {
+                        font-size: 0.8em;
+                    }
+                }
+
+                #customer {
+                    .collapsible {
+                        background-color: black;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: bolder;
+                        font-size: 1.2em;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        padding: 18px;
+                        width: 25%;
+                        outline: none;
+                    }
+
+                    .content {
+                        padding: 0 18px;
+                        display: none;
+                        overflow: hidden;
+                    }
+                    .active,
+                    .collapsible:hover {
+                        background-color: black;
+                    }
+                    @media only screen and (max-width:768px) {
+                        font-size: 0.8em;
+                    }
+                }
+
+                #newsletter {
+                    h3 {
+                        @media only screen and (max-width:768px) {
+                            font-size: 0.8em;
+                        }
+                    }
+                    .input-email {
+                        padding: 10px;
+                        border: none;
+                        @media only screen and (max-width:768px){
+                            width: 60%;
+                        }
+                    }
+
+                    #Go {
+                        padding: 10px;
+                        border: none;
+                        position: relative;
+                        left: -5px;
+                        background-color: #898888;
+                    }
+
+                    #socialmedia {
+                        ul {
+                            list-style-type: none;
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-around;
+                            padding-left: 0;
+                            padding-top: 30px;
+                        }
+                    }
+                }
+            }
+
+            #regions {
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
+                margin: auto;
+                @media only screen and (max-width:768px){
+                    width: 90%;
+                }
+            }
+        }
+
+        //Fin de footer
+    }
+}

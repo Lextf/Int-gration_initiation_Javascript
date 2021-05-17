@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af2789c1ce.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo_nav.png">
+    <script src="script.js"></script>
+    <title>Snowboards Mountains - Run Over Everything</title>
+</head>
+
+<body onload="showSlides(slideIndex)">
+    <!--Header-->
+    <header id="en-tête">
+        <div class="logo">
+            <img class="logocondensed" src="images/LOGO.png">
+        </div>
+        <nav id="navbar">
+            <ul id="shop">
+                <li>SHOP</li>
+                <li>TEAM</li>
+                <li>EVENTS</li>
+                <li>EXPERIENCE</li>
+                <li>COMPANY</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+        <!--mobile nav-->
+        <nav id="navbarmobile">
+            <div id="myLinks">
+                <a href="#Shop">News</a>
+                <a href="#Team">Contact</a>
+                <a href="#Events">Events</a>
+                <a href="Experience">Experience</a>
+                <a href="#Company">Company</a>
+                <a href="#Contact">Contact</a>
+                <a href="#Search">Search</a>
+                <a href="#Panier">Panier</a>
+            </div>
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <!--fin de mobile nav-->
+        <div id="search">
+            <ul>
+                <li><i class="fas fa-search"></i></li>
+                <li><i class="fas fa-shopping-bag"></i> €0</li>
+            </ul>
+        </div>
+    </header>
+    <!--Fin de Header-->
+    <!--Landingpage-->
+    <section id="landingpage">
+        <div id="background">
+            <h1 id="bigtitle">RUN OVER EVERYTHING</h1>
+            <button id="details">SEE DETAILS</button>
+        </div>
+    </section>
+    <!--fin de landingpage-->
+    <!--Snowboards-->
+    <section id="snowboards">
+        <div id="snow-container">
+            <h2 id="snow">SNOWBOARDS</h2>
+            <p id="lorem1">ALIQUAM ERAT VOLUTPAT, CARABITUR UT CONSEQUAT ARCU EGET LAOREET EST</p>
+            <p id="cross1"><i class="fas fa-times"></i></p>
+
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="./images/snowboard1.png"></div>
+
+
+                <div class="mySlides fade">
+                    <img src="./images/snowboard2.png"></div>
+
+                <div class="mySlides fade">
+                    <img src="./images/snowboard3.png">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/snowboard4.png">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div id="alldots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+            <p id="bottomtext">SNOWBOARD EXTREME SERIES</p>
+        </div>
+    </section>
+    <!--fin de Snowboards-->
+    <!--Community-->
+    <section id="community">
+        <div id="background2">
+            <div id="blocktext">
+                <h2 id="companytitle">THE MOUNTAINS SNOWBOARDING <span>&#174;</span></h2>
+                <p class="companytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vel, impedit
+                    repellat facere nisi eveniet. Nostrum, cupiditate, fugit ipsam in vitae repellendus sapiente
+                    perferendis numquam accusantium beatae vero unde distinctio?
+                    Ducimus suscipit ipsam officiis?
+                    Cumque saepe officia iste ratione eaque omnis, voluptatibus ea labore et? Sequi ratione id,
+                    doloremque consequuntur totam commodi distinctio. Illum iste fugit ad doloremque, exercitationem
+                    eligendi illo hic odio reiciendis.</p>
+                <p class="companytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, cupiditate,
+                    fugit ipsam in vitae repellendus sapiente perferendis numquam accusantium beatae vero unde
+                    distinctio?
+                    Ducimus suscipit ipsam officiis? Voluptatibus veniam expedita obcaecati fugit ipsam totam aut!
+                    Cumque saepe officia iste ratione eaque omnis, voluptatibus ea labore et? Sequi ratione id,
+                    doloremque consequuntur totam commodi distinctio. Illum iste fugit ad doloremque, exercitationem
+                    eligendi illo hic odio reiciendis.</p>
+            </div>
+        </div>
+    </section>
+    <!--Fin de Community-->
+    <!--Features-->
+    <section id="features">
+        <h2>FEATURES</h2>
+        <p id="cross"><i class="fas fa-times"></i></p>
+        <div id="featimage">
+            <div class="imageandtext">
+                <img class="ImgThumbnail" src="images/img 1.png" />
+                <p>Born Identity: Bringing Burton Hardgoods to life</p>
+            </div>
+            <div class="imageandtext">
+                <img class="ImgThumbnail" src="images/img 2.jpg" />
+                <p>Jeremy Jones : On That Street Grind</p>
+            </div>
+            <div class="imageandtext">
+                <img class="ImgThumbnail" src="images/img 3.jpg" />
+                <p>Burton's Tokyo Rail Days<br /> Recap </p>
+            </div>
+            <div class="imageandtext">
+                <img class="ImgThumbnail" src="images/img 4.jpg" />
+                <p>Burton's Tokyo Rail Days<br /> Review</p>
+            </div>
+            <div class="modal">
+                <span class="close">x</span>
+                <img class="modalImage" id="img01">
+            </div>
+        </div>
+    </section>
+    <!--Fin de features-->
+    <!--footer-->
+    <footer>
+        <div id="footertext">
+            <div id="products">
+                <button class="collapsible">PRODUCTS <i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                <p>Mens</p>
+                <p>Womans</p>
+                <p>Youth</p>
+                </div>
+            </div>
+            <div id="about">
+                <button class="collapsible">ABOUT <i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                <p>Careers and Internships</p>
+                <p>Sponsorships</p>
+                <p>Team</p>
+                <p>Catalog Request/Download</p>
+                </div>
+            </div>
+            <div id="customer">
+                <button class="collapsible">CUSTOMER <i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                <p>Contact Us</p>
+                <p>Shipping and Order Tracking</p>
+                <p>Easy Returns</p>
+                <p>Warranty</p>
+                <p>Replacement Binding Parts</p>
+                </div>
+            </div>
+            <div id="newsletter">
+                <h3>NEWSLETTER</h3>
+                <form action="#" method="POST">
+                    <input type="email" class="input-email" placeholder="Enter your Email">
+                    <button id="Go">Go</button>
+                </form>
+                <div id="socialmedia">
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-pinterest-p"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div id="regions">
+            <p>&#169; 2014 Mountains Snowboards</p>
+            <p>Change Region</p>
+        </div>
+    </footer>
+    <!--Fin de footer-->
+
+    <script src="scripts.js"></script>
+</body>
+</html>
